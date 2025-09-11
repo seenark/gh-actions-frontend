@@ -1,0 +1,14 @@
+name: Deploy to Surge
+description: Deploy to Surge
+inputs:
+  domain:
+    required: true
+    description: The domain to deploy to
+  dist-folder:
+    required: false
+    description: The folder to deploy
+    default: "dist"
+
+runs:
+  using: node24
+  main: dist/index.js
