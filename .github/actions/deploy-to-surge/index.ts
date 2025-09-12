@@ -11,7 +11,7 @@ async function main() {
   const token = core.getInput("token", { required: true, trimWhitespace: true })
   const email = core.getInput("email", { required: true, trimWhitespace: true })
 
-  const command = `surge ${distFolder} --token ${token} --login ${email} --domain ${domain}`
+  const command = `npx surge ${distFolder} --token ${token} --login ${email} --domain ${domain}`
 
   // deploy to surge
   const exitCode = await exec.exec(command)
