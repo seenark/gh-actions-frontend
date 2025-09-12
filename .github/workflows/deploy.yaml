@@ -46,7 +46,7 @@ jobs:
           path: ./dist
       - name: Deploy to surge
         id: deploy
-        uses: ./.github/actions/deploy-surge
+        uses: ./.github/actions/deploy-to-surge
         with:
           domain: gh-action-tanstack.surge.sh
           token: d2f81d98ab5f03e8da3fb6848c6a5f15
