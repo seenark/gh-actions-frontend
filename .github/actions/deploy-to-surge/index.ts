@@ -3,9 +3,7 @@ import * as exec from "@actions/exec"
 
 // surge dist --token d2f81d98ab5f03e8da3fb6848c6a5f15 --login um_oom@hotmail. --domain gh-action-tanstack.surge.sh
 
-
 async function main() {
-
 
   // get inputs values
   const domain = core.getInput("domain", { required: true, trimWhitespace: true })
