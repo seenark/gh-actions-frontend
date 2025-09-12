@@ -16983,7 +16983,7 @@ async function main() {
 		required: true,
 		trimWhitespace: true
 	});
-	const command = `surge ${distFolder} --token ${token} --login ${email} --domain ${domain}`;
+	const command = `npx surge ${distFolder} --token ${token} --login ${email} --domain ${domain}`;
 	return await import_exec.exec(command);
 }
 main();
