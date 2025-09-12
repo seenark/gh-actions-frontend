@@ -2,7 +2,7 @@ import { defineConfig } from "tsdown"
 
 export default defineConfig({
   entry: ['./index.ts'],
-  outDir: "dist",
+  outDir: "dist-action",
   unbundle: false,
   format: "esm",
   clean: true,
