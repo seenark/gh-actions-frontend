@@ -16975,7 +16975,9 @@ async function main() {
 		trimWhitespace: true
 	});
 	const command = `npx surge ${import_core.getInput("dist-folder")} --domain ${domain}`;
-	return await import_exec.exec(command);
+	const exitCode = await import_exec.exec(command);
+	import_core.setOutput("website-url", `https://${domain}`);
+	return exitCode;
 }
 main();
 

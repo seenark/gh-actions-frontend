@@ -16,8 +16,12 @@ async function main() {
 
   // deploy to surge
   const exitCode = await exec.exec(command)
+  core.setOutput("website-url", `https://${domain}`) // ::set-output
 
   return exitCode
 }
 
 main()
+
+
+

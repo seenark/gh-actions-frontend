@@ -55,3 +55,6 @@ jobs:
           token: d2f81d98ab5f03e8da3fb6848c6a5f15
           email: um_oom@hotmail.com
           dist-folder: ./dist
+      - name: Output website url
+        run: |
+          echo "Website URL: ${{ steps.deploy.outputs.website-url }}"
