@@ -16974,16 +16974,7 @@ async function main() {
 		required: true,
 		trimWhitespace: true
 	});
-	const distFolder = import_core.getInput("dist-folder");
-	const token = import_core.getInput("token", {
-		required: true,
-		trimWhitespace: true
-	});
-	const email = import_core.getInput("email", {
-		required: true,
-		trimWhitespace: true
-	});
-	const command = `npx surge ${distFolder} --token ${token} --login ${email} --domain ${domain}`;
+	const command = `npx surge ${import_core.getInput("dist-folder")} --domain ${domain}`;
 	return await import_exec.exec(command);
 }
 main();
