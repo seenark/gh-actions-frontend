@@ -1,15 +1,16 @@
-FROM oven/bun AS builder
+FROM oven/bun:1-alpine AS builder
 WORKDIR /app
 
 COPY . .
 
-RUN bun install && bun run build
+RUN bun install 
+CMD ["bun", "/app/index.ts"]
 
-FROM oven/bun:1-alpine AS runner
-WORKDIR /app
-
-COPY --from=builder /app/dist-action ./
-
-CMD ["bun", "/app/index.js"]
+# FROM oven/bun:1-alpine AS runner
+# WORKDIR /app
+#
+# COPY --from=builder /app/dist-action ./
+#
+# CMD ["bun", "/app/index.js"]
 
 
