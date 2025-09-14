@@ -53,6 +53,8 @@ jobs:
         with:
           domain: gh-action-tanstack.surge.sh
           dist-folder: ./dist
+          token: ${{ secrets.SURGE_TOKEN }}
+          email: ${{ secrets.SURGE_LOGIN }}
       - name: Output website url
         run: |
           echo "Website URL: ${{ steps.deploy.outputs.website-url }}"
