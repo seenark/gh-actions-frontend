@@ -9,7 +9,7 @@ async function main() {
   const token = Bun.env.INPUT_TOKEN
   const email = Bun.env.INPUT_EMAIL
 
-  const command = `npx surge ${distFolder} --token ${token} --login ${email} --domain ${domain}`
+  const command = `bun x surge ${distFolder} --token ${token} --login ${email} --domain ${domain}`
   // const command = `npx surge ${distFolder} --domain ${domain}`
 
   const exitCode = await $`${command}`
