@@ -3,7 +3,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN bun install 
+RUN bun i -g surge && bun install 
 CMD ["bun", "/app/index.ts"]
 
 # FROM oven/bun:1-alpine AS runner
