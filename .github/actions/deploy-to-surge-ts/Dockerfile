@@ -10,6 +10,6 @@ WORKDIR /app
 
 COPY --from=builder /app/dist-action ./
 
-CMD ["bun", "index.js"]
+CMD ["bun", "/app/index.js"]
 
 
