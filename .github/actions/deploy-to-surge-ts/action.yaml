@@ -1,0 +1,22 @@
+name: Deploy to Surge
+description: Deploy to Surge
+runs:
+  using: docker
+  image: Dockerfile
+inputs:
+  token:
+    required: true
+    description: The token to deploy to
+  email:
+    required: true
+    description: The email to deploy to
+  domain:
+    required: true
+    description: The domain to deploy to
+  dist-folder:
+    required: false
+    description: The folder to deploy
+    default: "dist"
+outputs:
+  website-url:
+    description: The URL of the deployed website

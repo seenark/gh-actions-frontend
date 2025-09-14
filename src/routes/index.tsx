@@ -28,7 +28,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn TanStack
+          Use Custom action in Docker
         </a>
       </header>
     </div>

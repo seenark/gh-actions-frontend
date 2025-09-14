@@ -1,0 +1,16 @@
+{
+  "name": "deploy-to-surge-ts",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "./node_modules/.bin/tsdown"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.21",
+    "tsdown": "^0.15.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

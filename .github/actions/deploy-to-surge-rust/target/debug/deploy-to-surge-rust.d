@@ -1,0 +1,1 @@
+/Users/atiwatseenark/Documents/gh-actions/gh-actions-frontend/.github/actions/deploy-to-surge-rust/target/debug/deploy-to-surge-rust: /Users/atiwatseenark/Documents/gh-actions/gh-actions-frontend/.github/actions/deploy-to-surge-rust/src/main.rs

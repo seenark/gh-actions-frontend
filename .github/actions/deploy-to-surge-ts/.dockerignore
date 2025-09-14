@@ -1,0 +1,6 @@
+node_modules
+dist-action
+CLAUDE.md
+README.md
+Dockerfile
+action.yaml
