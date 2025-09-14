@@ -47,6 +47,9 @@ jobs:
       - name: Deploy to surge
         id: deploy
         uses: ./.github/actions/deploy-to-surge
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+          SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
         with:
           domain: gh-action-tanstack.surge.sh
           token: d2f81d98ab5f03e8da3fb6848c6a5f15
