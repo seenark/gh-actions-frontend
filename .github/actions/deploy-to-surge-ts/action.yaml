@@ -13,7 +13,7 @@ inputs:
   domain:
     required: true
     description: The domain to deploy to
-  dist-folder:
+  dist_folder:
     required: false
     description: The folder to deploy
     default: "dist"
